@@ -22,7 +22,7 @@ function App() {
       const formData = new FormData();
       formData.append("file", file);
 
-      const res = await axios.post("http://127.0.0.1:8000/generate", formData);
+      const res = await axios.post("https://flashcard-ai-0mo1.onrender.com/generate", formData);
 
       if (res.data.error) {
         alert(res.data.error);
